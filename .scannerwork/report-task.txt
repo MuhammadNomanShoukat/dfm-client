@@ -1,0 +1,6 @@
+projectKey=dfm-client
+serverUrl=http://172.16.1.178:9000
+serverVersion=26.7.0.124771
+dashboardUrl=http://172.16.1.178:9000/dashboard?id=dfm-client
+ceTaskId=eff55ea5-bba7-4184-9c7a-2448559e4da3
+ceTaskUrl=http://172.16.1.178:9000/api/ce/task?id=eff55ea5-bba7-4184-9c7a-2448559e4da3
