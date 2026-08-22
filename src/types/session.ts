@@ -4,7 +4,8 @@ export type Role =
   | 'farm_manager'
   | 'veterinarian'
   | 'milk_operator'
-  | 'worker';
+  | 'worker'
+  | 'accountant';
 
 export type FarmSummary = {
   id: string;
@@ -32,4 +33,5 @@ export const ROLE_LABEL: Record<Role, string> = {
   veterinarian: 'Veterinarian',
   milk_operator: 'Milk Operator',
   worker: 'Worker',
+  accountant: 'Accountant',
 };

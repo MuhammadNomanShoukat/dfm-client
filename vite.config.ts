@@ -7,6 +7,16 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      workbox: {
+        navigateFallback: '/index.html',
+        runtimeCaching: [
+          {
+            urlPattern: /^https?:\/\/.*\/api\/(dashboard|animals|farms)/,
+            handler: 'NetworkFirst',
+            options: { cacheName: 'api-cache', networkTimeoutSeconds: 5 },
+          },
+        ],
+      },
       includeAssets: ['favicon.svg'],
       manifest: {
         name: 'HerdOS Dairy',
